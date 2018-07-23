@@ -5,9 +5,15 @@ use std::{io, io::prelude::*, fs::File, vec, io::BufReader};
 
 fn main() {
 
-    //Full path to text file with adjectives and adverbs 
-    let ad_path: String = "adjectives.txt".to_string();
-    let noun_path: String = "nouns.txt".to_string();
+    //Full path to text file with adjectives and adverbs
+    
+    println!("Please enter the adjective text file: ");
+    
+    let ad_path: String = read!();
+    
+    println!("Please enter the noun text file: ");
+    
+    let noun_path: String = read!();
     
     let ad_file = File::open(ad_path).expect("unable to open");
     let noun_file = File::open(noun_path).expect("unable to open");
