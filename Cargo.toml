@@ -1,0 +1,11 @@
+#[feature(collections)]
+
+[package]
+name = "RandomProjectName"
+version = "0.1.0"
+authors = ["The_Sage <sagehornkaleb@gmail.com>"]
+
+[dependencies]
+rand = "0.5"
+text_io = "0.1.7"
+log='*'
